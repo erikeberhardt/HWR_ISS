@@ -1,10 +1,7 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import requests
-import join
 import json
-import pydeck
 
 astronauts = requests.get("http://api.open-notify.org/astros.json")
 astro = json.loads(astronauts.text)
